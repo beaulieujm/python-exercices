@@ -2,7 +2,7 @@
 # Ask the user for a number. Depending on whether the number is even or odd, 
 # print out an appropriate message to the user.
 
-def get_a_number(number) :
+def convert_to_number(number) :
 	try :
 		nombre = int(number)
 	except ValueError:
@@ -16,7 +16,7 @@ while not is_done :
 	if input_string == "q" :
 		is_done = True
 		break
-	nombre = get_a_number(input_string)
+	nombre = convert_to_number(input_string)
 	if nombre != "Not a number" :
 		if nombre%2 == 0 :
 	  		parite = "pair"
